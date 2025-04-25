@@ -1,0 +1,12 @@
+<section class="training section" id="training">
+    <div class="container">
+      <h2 class="section-title">{{ title }}</h2>
+      
+      <div class="programs-grid">
+        <div class="program-card" *ngFor="let program of programs">
+          <div class="program-icon">{{ program.icon }}</div>
+          <h3 class="program-name">{{ program.name }}</h3>
+        </div>
+      </div>
+    </div>
+  </section>

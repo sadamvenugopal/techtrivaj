@@ -1,0 +1,13 @@
+<section class="ai-training section">
+    <div class="container">
+      <h2 class="section-title">{{ title }}</h2>
+      
+      <div class="courses-grid">
+        <div class="course-card" *ngFor="let course of courses">
+          <div class="course-icon">{{ course.icon }}</div>
+          <h3 class="course-title">{{ course.title }}</h3>
+          <p class="course-description">{{ course.description }}</p>
+        </div>
+      </div>
+    </div>
+  </section>

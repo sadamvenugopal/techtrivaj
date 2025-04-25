@@ -1,0 +1,27 @@
+.promo-card {
+    background: linear-gradient(135deg, var(--primary), var(--dark));
+    color: white;
+    border-radius: 12px;
+    padding: 3rem;
+    text-align: center;
+  }
+  
+  .promo-title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .promo-description {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+  }
+  
+  .btn {
+    background-color: white;
+    color: var(--primary);
+  }
+  
+  .btn:hover {
+    background-color: #f1f1f1;
+  }

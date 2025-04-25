@@ -1,0 +1,15 @@
+.team {
+    background-color: var(--light);
+  }
+  
+  .team-photo-container {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .team-photo {
+    width: 100%;
+    height: auto;
+    display: block;
+  }

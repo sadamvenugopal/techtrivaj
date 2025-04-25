@@ -1,0 +1,35 @@
+.programs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+  }
+  
+  .program-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s;
+  }
+  
+  .program-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+  
+  .program-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .program-name {
+    font-size: 1.2rem;
+    color: var(--primary);
+  }
+  
+  @media (max-width: 600px) {
+    .programs-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }

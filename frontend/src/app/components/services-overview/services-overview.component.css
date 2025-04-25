@@ -1,0 +1,112 @@
+/* General Section Styles */
+.services {
+    padding: 60px 0;
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .section-description {
+    font-size: 1.2rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 40px;
+  }
+  
+  /* Services Grid */
+  .services-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .service-card {
+    text-align: center;
+    width: calc(20% - 30px); /* Adjust based on grid layout */
+    transition: transform 0.3s ease;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .service-icon {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 20px;
+  }
+  
+  .service-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Call-to-Action Button */
+  .btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .view-all-btn {
+    margin-top: 40px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .service-card {
+      width: calc(33.33% - 30px); /* Three cards per row on tablets */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .service-card {
+      width: calc(50% - 30px); /* Two cards per row on smaller screens */
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .service-card {
+      width: 100%; /* Single card per row on very small screens */
+    }
+  
+    .section-title {
+      font-size: 2rem; /* Reduce font size for mobile */
+    }
+  
+    .section-description {
+      font-size: 1rem; /* Reduce font size for mobile */
+    }
+  
+    .service-title {
+      font-size: 1.2rem; /* Reduce font size for mobile */
+    }
+  
+    .btn {
+      padding: 10px 20px; /* Reduce button padding for mobile */
+      font-size: 1rem; /* Reduce font size for mobile */
+    }
+  }

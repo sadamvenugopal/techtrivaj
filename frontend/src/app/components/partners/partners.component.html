@@ -1,0 +1,12 @@
+<section class="partners section" id="partners">
+  <div class="container">
+    <h2 class="section-title">{{ title }}</h2>
+    
+    <div class="partners-grid">
+      <div class="partner-logo" *ngFor="let partner of partners">
+        <div class="logo-icon">{{ partner.logo }}</div>
+        <p class="partner-name">{{ partner.name }}</p>
+      </div>
+    </div>
+  </div>
+</section>

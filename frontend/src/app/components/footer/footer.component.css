@@ -1,0 +1,97 @@
+.footer {
+    background-color: var(--dark);
+    color: white;
+    padding: 4rem 0 2rem;
+    text-align: center;
+    font-size: 1.1rem; /* Increased base font size */
+  }
+  
+  .footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+    margin-bottom: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .footer-logo {
+    font-size: 2rem; /* Increased from 1.8rem */
+    margin-bottom: 1rem;
+  }
+  
+  .footer-slogan {
+    opacity: 0.8;
+    line-height: 1.6;
+    font-size: 1.2rem; /* Added font size */
+  }
+  
+  .links-title, .social-title {
+    font-size: 1.4rem; /* Increased from 1.2rem */
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+  }
+  
+  /* Removed the underline completely by deleting the ::after pseudo-element */
+  
+  .links-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2rem; /* Added font size */
+  }
+  
+  .links-list li {
+    margin-bottom: 1rem; /* Increased from 0.8rem */
+  }
+  
+  .footer-link {
+    color: white;
+    opacity: 0.8;
+    text-decoration: none; /* Removed underline */
+    transition: opacity 0.3s;
+    font-size: 1.1rem; /* Added font size */
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    font-size: 1.8rem; /* Increased from 1.5rem */
+  }
+  
+  .social-icon {
+    color: white;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+    text-decoration: none; /* Removed underline */
+  }
+  
+  .footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 2rem;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 1.1rem; /* Increased from 0.9rem */
+  }
+  
+  @media (max-width: 768px) {
+    .footer-content {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+    
+    /* Additional mobile font size adjustments if needed */
+    .footer-logo {
+      font-size: 1.8rem;
+    }
+    
+    .links-title, .social-title {
+      font-size: 1.3rem;
+    }
+  }

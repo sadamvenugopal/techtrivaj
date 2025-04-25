@@ -1,0 +1,20 @@
+<section class="services section" id="services">
+    <div class="container">
+      <!-- Header -->
+      <h2 class="section-title">{{ title }}</h2>
+      <p class="section-description">
+        We provide enterprise software consulting, development, and training to Fortune 500 and Global 1000 enterprises across the world. Our innovative solutions have helped thousands of our clients realize their tactical and strategic business objectives, allowing them to achieve great new heights in a competitive and ever-changing market. Discover how we can transform your business.
+      </p>
+
+      <!-- Service Icons Grid -->
+      <div class="services-grid">
+        <div class="service-card" *ngFor="let service of services">
+          <img [src]="service.icon" alt="{{ service.title }}" class="service-icon" />
+          <h3 class="service-title">{{ service.title }}</h3>
+        </div>
+      </div>
+
+      <!-- Call-to-Action Button -->
+      <a href="#" class="btn view-all-btn">View All Services</a>
+    </div>
+  </section>

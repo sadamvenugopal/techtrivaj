@@ -1,21 +1,37 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, AfterViewInit } from '@angular/core';
 
 @Component({
   selector: 'app-partners',
   standalone: true,
   templateUrl: './partners.component.html',
   styleUrls: ['./partners.component.css'],
-  imports:[CommonModule]
-
+  imports: [CommonModule]
 })
-export class PartnersComponent {
+export class PartnersComponent implements AfterViewInit {
   title = 'Our Technology Partners';
   partners = [
-    { name: 'Microsoft', logo: '🪟' },
-    { name: 'AWS', logo: '☁️' },
-    { name: 'Google Cloud', logo: '🔍' },
-    { name: 'IBM', logo: '💻' },
-    { name: 'Oracle', logo: '🏛️' }
+    { name: 'Microsoft', logo: '/windows.png' },
+    { name: 'AWS', logo: '/aws.png' },
+    { name: 'Google Cloud', logo: '/google-cloud.png' },
+    { name: 'IBM', logo: '/ibm.png' },
+    { name: 'Oracle', logo: '/oracle.png' }
   ];
+
+  ngAfterViewInit() {
+    const partnersSection = document.querySelector('.partners-content');
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          partnersSection?.classList.add('visible');
+        }
+      },
+      { threshold: 0.5 }
+    );
+
+    if (partnersSection) {
+      observer.observe(partnersSection);
+    }
+  }
 }

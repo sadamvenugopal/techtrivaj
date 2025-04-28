@@ -8,8 +8,10 @@
 
       <!-- Service Icons Grid -->
       <div class="services-grid">
-        <div class="service-card" *ngFor="let service of services">
-          <img [src]="service.icon" alt="{{ service.title }}" class="service-icon" />
+        <div 
+        class="service-card" 
+        *ngFor="let service of services; let i = index"
+        [ngClass]="{'visible': visibleCards[i]}">          <img [src]="service.icon" alt="{{ service.title }}" class="service-icon" />
           <h3 class="service-title">{{ service.title }}</h3>
         </div>
       </div>

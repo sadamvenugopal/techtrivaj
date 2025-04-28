@@ -27,26 +27,45 @@
   /* Services Grid */
   .services-grid {
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* Center all cards horizontally */
+    align-items: center;     /* Center all cards vertically */
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 1rem;
   }
   
   .service-card {
     text-align: center;
-    width: calc(20% - 30px); /* Adjust based on grid layout */
-    transition: transform 0.3s ease;
+    width: calc(20% - 30px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 2.8s ease, transform 0.6s ease;
   }
+  
+  
+.service-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
   
   .service-card:hover {
     transform: translateY(-10px);
   }
   
   .service-icon {
-    width: 100px;
-    height: 100px;
+    width: 250px;
+    height: 250px;
     object-fit: contain;
     margin-bottom: 20px;
+    transition: transform 0.3s ease; /* ADD this line for image transition */
+  }
+  
+  /* Optional: Add image effect on card hover */
+  .service-card:hover .service-icon {
+    transform: scale(1.05); /* Slight zoom effect on hover */
   }
   
   .service-title {

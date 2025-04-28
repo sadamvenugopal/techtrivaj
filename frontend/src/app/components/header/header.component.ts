@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
   imports: [CommonModule],
 })
 export class HeaderComponent {
-  logo = 'TrivaJTech';
+  logo = 'BlueSkyCloud';
   isMenuOpen = false;
   
   navItems = [

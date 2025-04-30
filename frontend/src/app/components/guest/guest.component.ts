@@ -13,11 +13,12 @@ import { TeamComponent } from '../team/team.component';
 import { BlogComponent } from '../blog/blog.component';
 import { CallToActionComponent } from '../call-to-action/call-to-action.component';
 import { FooterComponent } from '../footer/footer.component';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-guest',
   standalone: true,
-  imports: [
+  imports: [ CommonModule,
     HeaderComponent,
     HeroComponent,
     PartnerBannerComponent,
@@ -36,4 +37,18 @@ import { FooterComponent } from '../footer/footer.component';
   templateUrl: './guest.component.html',
   styleUrls: ['./guest.component.css']
 })
-export class GuestComponent {}
+export class GuestComponent {
+
+  showBubble = false;
+
+  ngOnInit() {
+    setTimeout(() => {
+      this.showBubble = true;
+    }, 3000); // Show after 3 seconds
+
+    // Optional: Hide after 8 seconds
+    setTimeout(() => {
+      this.showBubble = false;
+    }, 11000); // 3s delay + 8s visibility
+  }
+}

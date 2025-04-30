@@ -1,0 +1,54 @@
+.floating-wrapper {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10000;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  .floating-icon img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    background-color: white;
+  }
+
+  .message-bubble {
+    background-color: #fff;
+    color: #333;
+    padding: 16px 20px;
+    border-radius: 20px 20px 20px 0;
+    margin-bottom: 12px;
+    max-width: 250px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+    animation: bubbleIn 0.4s ease;
+    font-size: 1rem;
+    font-weight: 600;
+    position: relative;
+  }
+  
+  .message-bubble::after {
+    content: '';
+    position: absolute;
+    bottom: -12px;
+    right: 20px;
+    border-width: 12px 12px 0;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+  }
+   
+  
+  @keyframes bubbleIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

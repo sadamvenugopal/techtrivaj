@@ -12,3 +12,16 @@
 <app-blog></app-blog>
 <app-call-to-action></app-call-to-action>
 <app-footer></app-footer>
+<div class="floating-wrapper">
+    <div class="message-bubble" *ngIf="showBubble">
+      Book a free 30-min call!
+    </div>
+    <a href="https://cal.com/trivajtechnologies/discovery-call-with-trivaj-technologies?layout=mobile&duration=30"
+       target="_blank"
+       class="floating-icon"
+       aria-label="External Link">
+      <img src="/meeting.png" alt="Icon" />
+    </a>
+  </div>
+  
+  

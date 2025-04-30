@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
   imports: [CommonModule],
 })
 export class HeaderComponent {
-  logo = 'BlueSkyCloud';
+  logo = '/logo2.png'; // Adjust the path based on where your image is stored
   isMenuOpen = false;
   
   navItems = [

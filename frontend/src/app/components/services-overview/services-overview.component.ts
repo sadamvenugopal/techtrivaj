@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, HostListener, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-services-overview',
@@ -20,6 +21,8 @@ export class ServicesOverviewComponent implements OnInit {
 
   visibleCards: boolean[] = [];
 
+  constructor(private router: Router) {}
+
   ngOnInit() {
     this.visibleCards = new Array(this.services.length).fill(false);
   }
@@ -34,4 +37,27 @@ export class ServicesOverviewComponent implements OnInit {
       }
     });
   }
+
+  onServiceClick(serviceTitle: string) {
+    switch (serviceTitle) {
+      case 'Development':
+        this.router.navigate(['/services/development-overview']);
+        break;
+      case 'Consulting':
+        this.router.navigate(['/services/consulting-overview']);
+        break;
+      case 'Outsourcing':
+        this.router.navigate(['/services/outsourcing-overview']);
+        break;
+      case 'Training':
+        this.router.navigate(['/services/training-overview']);
+        break;
+      case 'Community':
+        this.router.navigate(['/services/community-overview']);
+        break;
+      default:
+        break;
+    }
+  }
+  
 }

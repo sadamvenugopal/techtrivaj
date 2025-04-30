@@ -11,11 +11,11 @@ import { Component, HostListener, OnInit } from '@angular/core';
 export class TechnologyExpertiseComponent implements OnInit {
   title = 'Our Strategic Technology Partnerships';
   expertiseAreas = [
-    { name: 'Cloud Computing', image: '/cloud-computing.jpg' },
-    { name: 'Artificial Intelligence', image: '/artificial-intelligence.jpg' },
-    { name: 'Data Analytics', image: '/data-analytics.jpg' },
-    { name: 'Cybersecurity', image: '/cyber-security.jpg' },
-    { name: 'IoT Solutions', image: '/iot-solutions.jpg' },
+    { name: 'Cloud Computing', image: '/cloud-computing1.png' },
+    { name: 'Artificial Intelligence', image: '/artificial-intelligence1.jpg' },
+    { name: 'Data Analytics', image: '/data-analytics1.jpg' },
+    { name: 'Cybersecurity', image: '/cyber-security1.jpg' },
+    { name: 'IoT Solutions', image: '/iot-solution1.png' },
   ];
 
   visibleCards: boolean[] = [];

@@ -1,7 +1,9 @@
 <header class="header">
     <div class="container">
-      <div class="logo">{{ logo }}</div>
-      
+      <div class="logo">
+        <img [src]="logo" alt="BlueSkyCloud Logo" class="logo-img" />
+      </div>
+            
       <button class="hamburger" (click)="toggleMenu()" aria-label="Menu" [class.hidden]="isMenuOpen">
         <span class="hamburger-line"></span>
         <span class="hamburger-line"></span>

@@ -1,0 +1,30 @@
+<!-- Header Section -->
+<div class="hero-section">
+    <div class="hero-text">
+      <h4>OUR SERVICES</h4>
+      <h1>Outsourcing Services</h1>
+    </div>
+    <div class="hero-image">
+      <img src="/outsourcing-banner.jpg" alt="Outsourcing Banner" />
+    </div>
+  </div>
+  
+  <!-- Services Section -->
+  <div class="services-wrapper">
+    <div class="service-item" *ngFor="let section of sections; let i = index" [ngClass]="{ 'reverse': i % 2 !== 0 }">
+      <div class="service-text">
+        <h2>{{ section.title }}</h2>
+        <p>{{ section.description }}</p>
+      </div>
+      <div class="service-icon">
+        <img [src]="section.icon" [alt]="section.title" />
+      </div>
+    </div>
+  </div>
+  
+  <!-- CTA Section -->
+  <div class="cta-banner">
+    <h2>Ready to Get Started?</h2>
+    <p>Contact us today and let’s build something great together.</p>
+    <button>Reach Out</button>
+  </div>

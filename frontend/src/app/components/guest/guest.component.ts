@@ -19,7 +19,7 @@ import { CommonModule } from '@angular/common';
   selector: 'app-guest',
   standalone: true,
   imports: [ CommonModule,
-    HeaderComponent,
+    // HeaderComponent,
     HeroComponent,
     PartnerBannerComponent,
     ServicesOverviewComponent,
@@ -32,7 +32,7 @@ import { CommonModule } from '@angular/common';
     TeamComponent,
     BlogComponent,
     CallToActionComponent,
-    FooterComponent
+    // FooterComponent
   ],
   templateUrl: './guest.component.html',
   styleUrls: ['./guest.component.css']

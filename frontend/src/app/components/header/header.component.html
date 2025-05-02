@@ -1,38 +1,63 @@
 <header class="header">
-    <div class="container">
-      <div class="logo">
-        <img [src]="logo" alt="BlueSkyCloud Logo" class="logo-img" />
-      </div>
-            
-      <button class="hamburger" (click)="toggleMenu()" aria-label="Menu" [class.hidden]="isMenuOpen">
-        <span class="hamburger-line"></span>
-        <span class="hamburger-line"></span>
-        <span class="hamburger-line"></span>
-      </button>
-      
-      <!-- Desktop Navigation -->
-      <nav class="nav">
-        <ul class="nav-list">
-          <li class="nav-item" *ngFor="let item of navItems">
-            <a [href]="item.link" class="nav-link" (click)="scrollToSection($event, item.link)">{{ item.name }}</a>
-          </li>
-        </ul>
-      </nav>
-      
-      <!-- Mobile Menu Overlay -->
-      <div class="mobile-menu-overlay" [class.active]="isMenuOpen" (click)="closeMenu()"></div>
-      
-      <!-- Mobile Menu -->
-      <div class="mobile-menu" [class.active]="isMenuOpen">
-        <button class="close-btn" (click)="closeMenu()" aria-label="Close menu">
-          &times;
-        </button>
-        
-        <ul class="mobile-nav-list">
-          <li class="mobile-nav-item" *ngFor="let item of navItems">
-            <a [href]="item.link" class="mobile-nav-link" (click)="scrollToSection($event, item.link)">{{ item.name }}</a>
-          </li>
-        </ul>
-      </div>
+  <div class="container">
+    <div class="logo">
+      <img [src]="logo" alt="BlueSkyCloud Logo" class="logo-img" />
     </div>
-  </header>
+
+    <button class="hamburger" (click)="toggleMenu()" aria-label="Menu" [class.hidden]="isMenuOpen">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </button>
+
+    <!-- Desktop Navigation -->
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item" *ngFor="let item of navItems" [class.has-children]="item.children">
+          <ng-container *ngIf="!item.children">
+            <a [routerLink]="item.link" class="nav-link" (click)="closeMenu()">{{ item.name }}</a>
+          </ng-container>
+          <ng-container *ngIf="item.children">
+            <div class="nav-link parent-menu">
+              {{ item.name }}
+              <ul class="dropdown">
+                <li *ngFor="let child of item.children">
+                  <a [routerLink]="child.link" class="dropdown-link" (click)="closeMenu()">{{ child.name }}</a>
+                </li>
+              </ul>
+            </div>
+          </ng-container>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" [class.active]="isMenuOpen" (click)="closeMenu()"></div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" [class.active]="isMenuOpen">
+      <button class="close-btn" (click)="closeMenu()" aria-label="Close menu">&times;</button>
+
+      <ul class="mobile-nav-list">
+        <li class="mobile-nav-item" *ngFor="let item of navItems">
+          <ng-container *ngIf="!item.children">
+            <a [routerLink]="item.link" class="mobile-nav-link" (click)="closeMenu()">{{ item.name }}</a>
+          </ng-container>
+          
+          <ng-container *ngIf="item.children">
+            <div class="mobile-submenu">
+              <span class="mobile-nav-link" (click)="toggleMobileSubMenu(item)">
+                {{ item.name }} ▼
+              </span>
+              <ul *ngIf="item.showChildren">
+                <li *ngFor="let child of item.children">
+                  <a [routerLink]="child.link" class="mobile-sub-link" (click)="closeMenu()">{{ child.name }}</a>
+                </li>
+              </ul>
+            </div>
+          </ng-container>
+        </li>
+      </ul>      
+    </div>
+  </div>
+</header>

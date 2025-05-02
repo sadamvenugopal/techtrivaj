@@ -51,6 +51,20 @@
 
 @media (max-width: 600px) {
   .partners-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);  /* Two columns on small screens */
+  }
+
+  .partner-logo {
+    height: auto;  /* Allow height to adjust based on the content */
+  }
+
+  .logo-icon {
+    width: 80%; /* Reduce size on mobile */
+    height: auto; /* Let it adjust proportionally */
+  }
+
+  .partner-image {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
   }
 }

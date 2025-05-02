@@ -89,3 +89,64 @@
     font-size: 1rem;
     cursor: pointer;
   }
+
+  @media (max-width: 768px) {
+    /* Hero Section */
+    .hero-section {
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .hero-text h1 {
+      font-size: 2rem;
+    }
+    .hero-image img {
+      max-width: 100%;
+      margin-top: 20px;
+    }
+  
+    /* Services Section */
+    .services-wrapper {
+      padding: 40px 20px;
+    }
+    .service-item {
+      flex-direction: column;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .service-item.reverse {
+      flex-direction: column;
+    }
+    .service-text {
+      padding: 10px;
+      flex: 1 1 auto;
+    }
+    .service-text h2 {
+      font-size: 1.5rem;
+    }
+    .service-icon {
+      padding: 10px;
+    }
+    .service-icon img {
+      width: 100%;
+      max-width: 300px;
+    }
+  
+    /* CTA Section */
+    .cta-banner {
+      margin: 40px 20px;
+      padding: 40px 20px;
+    }
+    .cta-banner h2 {
+      font-size: 1.5rem;
+    }
+    .cta-banner p {
+      font-size: 0.95rem;
+    }
+    .cta-banner button {
+      padding: 10px 24px;
+      font-size: 0.95rem;
+    }
+  }
+  

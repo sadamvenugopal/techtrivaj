@@ -1,0 +1,496 @@
+/* Hero Section */
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to right, #e6f0fa, #f7fafd);
+    padding: 60px 40px;
+    flex-wrap: wrap;
+}
+
+.hero-text {
+    max-width: 500px;
+}
+
+.hero-text h4 {
+    color: #999;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #1a1a1a;
+}
+
+.hero-image img {
+    max-width: 400px;
+    border-radius: 12px;
+}
+
+/* New Section: From Legacy to Leading Edge */
+.legacy-to-leading-edge {
+    padding: 60px 40px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    gap: 40px;
+}
+
+.col-image {
+    flex: 1;
+    text-align: center;
+}
+
+.col-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+.col-content {
+    flex: 1;
+}
+
+.col-content h2 {
+    font-size: 2rem;
+    color: #2d6baf;
+    margin-bottom: 20px;
+}
+
+.col-content p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.col-content button {
+    background: #1a73e8;
+    color: #fff;
+    padding: 12px 32px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* Services Section */
+.services-section {
+    padding: 60px 40px;
+}
+
+.services-section h2 {
+    font-size: 2rem;
+    color: #2d6baf;
+    margin-bottom: 20px;
+}
+
+.services-section p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.service-cards {
+    display: grid;
+    gap: 20px;
+}
+
+.service-card {
+    background-color: #f0f6ff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+}
+
+.service-card .service-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 16px;
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    color: #2d6baf;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Desktop: 2 cards per row */
+@media (min-width: 768px) {
+    .service-cards {
+        grid-template-columns: repeat(2, minmax(300px, 1fr));
+    }
+}
+
+/* Tablet: 2 cards per row */
+@media (min-width: 576px) and (max-width: 767px) {
+    .service-cards {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+}
+
+/* Mobile: 1 card per row */
+@media (max-width: 575px) {
+    .service-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .service-card {
+        padding: 16px;
+    }
+
+    .service-card .service-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .service-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .service-card p {
+        font-size: 0.95rem;
+    }
+}
+
+/* Team Section */
+.team-section {
+    background-color: #f0f6ff;
+    padding: 40px;
+    margin: 60px 40px;
+    border-radius: 12px;
+}
+
+.team-section h2 {
+    font-size: 2rem;
+    margin-bottom: 16px;
+    color: #2d6baf;
+}
+
+.team-section p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 24px;
+}
+
+.team-members {
+    display: flex;
+    gap: 20px;
+}
+
+.team-member {
+    text-align: center;
+}
+
+.team-member img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+/* Case Studies Section */
+.case-studies-section {
+    padding: 60px 40px;
+}
+
+.case-studies-section h2 {
+    font-size: 2rem;
+    color: #2d6baf;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.case-studies-section p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+/* Carousel Container */
+.case-studies-carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 500px; /* Allow height to adjust based on content */
+    border-radius: 20px;
+}
+
+/* Case Study Card */
+.case-study-card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f9f5e7; /* Light beige background */
+    transition: transform 0.5s ease;
+    padding: 20px;
+    box-sizing: border-box;
+    transform: translateX(100%); /* Start off-screen */
+    flex-wrap: wrap;
+
+}
+
+/* Active Slide */
+.case-study-card.active {
+    transform: translateX(0);
+}
+
+/* Case Study Content */
+.case-study-content {
+    flex: 1;
+}
+
+.case-study-content h3 {
+    font-size: 1.8rem;
+    color: #2d6baf;
+    margin-bottom: 10px;
+}
+
+.case-study-content p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.case-study-details strong {
+    font-size: 1rem;
+    color: #2d6baf;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.case-study-details ul {
+    list-style: none;
+    padding: 0;
+}
+
+.case-study-details li {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.case-study-card button {
+    background: #1a73e8;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.client-logo {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin-left: 20px;
+    object-fit: contain;
+}
+
+
+/* Pagination Dots */
+.pagination-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination-dots span {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.pagination-dots span.active {
+    background-color: #2d6baf;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .case-study-card {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        flex-wrap: wrap;
+
+    }
+
+    .client-logo {
+        margin-top: 20px;
+        margin-left: 0;
+        align-self: center;
+        width: 100%;
+        max-width: 150px;
+        height: auto;
+        object-fit: contain;
+    }
+    .case-study-content {
+        width: 100%;
+    }
+
+    .case-study-card button {
+        align-self: flex-start; /* Align button to the left */
+    }
+}
+
+@media (max-width: 575px) {
+    .case-study-card {
+        padding: 16px;
+    }
+
+    .case-study-content h3 {
+        font-size: 1.5rem;
+    }
+
+    .case-study-content p {
+        font-size: 0.95rem;
+    }
+
+    .case-study-details strong {
+        font-size: 0.9rem;
+    }
+
+    .case-study-details li {
+        font-size: 0.85rem;
+    }
+
+    .case-study-card button {
+        padding: 10px 20px;
+        font-size: 0.95rem;
+    }
+
+    .client-logo {
+        max-width: 150px; /* Smaller logo for mobile */
+    }
+}
+/* CTA Section */
+.cta-banner {
+    background: #f0f6ff;
+    padding: 60px 20px;
+    text-align: center;
+    border-radius: 12px;
+    margin: 60px 40px;
+}
+
+.cta-banner h2 {
+    font-size: 2rem;
+    margin-bottom: 16px;
+}
+
+.cta-banner p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 24px;
+}
+
+.cta-banner button {
+    background: #1a73e8;
+    color: #fff;
+    padding: 12px 32px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    /* Hero Section */
+    .hero-section {
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .hero-image img {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .col-image {
+        margin-bottom: 20px;
+    }
+
+    .col-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .col-content p {
+        font-size: 0.95rem;
+    }
+
+    .col-content button {
+        padding: 10px 24px;
+        font-size: 0.95rem;
+    }
+
+    /* Team Section */
+    .team-members {
+        flex-direction: column;
+    }
+
+    .team-member {
+        margin-bottom: 20px;
+    }
+
+    /* CTA Section */
+    .cta-banner {
+        margin: 40px 20px;
+        padding: 40px 20px;
+    }
+
+    .cta-banner h2 {
+        font-size: 1.5rem;
+    }
+
+    .cta-banner p {
+        font-size: 0.95rem;
+    }
+
+    .cta-banner button {
+        padding: 10px 24px;
+        font-size: 0.95rem;
+    }
+}

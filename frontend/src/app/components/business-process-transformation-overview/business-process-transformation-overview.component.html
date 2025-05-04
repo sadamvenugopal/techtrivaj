@@ -1,1 +1,102 @@
-<p>business-process-transformation-overview works!</p>
+<!-- Hero Section -->
+<div class="hero-section">
+    <div class="hero-text">
+      <h4>OUR EXPERTISE</h4>
+      <h1>Business Process Transformation</h1>
+    </div>
+    <div class="hero-image">
+      <img src="/business-process-transformation-hero.jpg" alt="Business Process Transformation Banner" />
+    </div>
+  </div>
+  
+  <!-- New Section: From Legacy to Leading Edge -->
+  <section class="legacy-to-leading-edge">
+    <div class="container">
+      <div class="row">
+        <div class="col-image">
+          <img src="/team-working-together.jpg" alt="Team Working Together" />
+        </div>
+        <div class="col-content">
+          <h2>From Legacy to Leading Edge</h2>
+          <p>
+            Improving empowers businesses to excel in today's digital landscape by transforming legacy applications into modern, cloud-native solutions. Our team of seasoned experts works closely with clients to identify opportunities for innovation, enhanced scalability, and streamlined operations while maintaining the highest levels of security and compliance. Take the next step in your business evolution with assurance as we lead you toward a future-ready digital infrastructure.
+          </p>
+          <button>Let's Get Started on Something Great</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Services Section -->
+  <div class="services-section">
+    <h2>Reimagine Digital Excellence with Our Business Process Transformation Services</h2>
+    <p>
+      Our end-to-end business process transformation services encompass everything from process optimization to integration with modern technologies. By leveraging cutting-edge methodologies and tools, we help clients enhance operational efficiency, reduce costs, and improve overall performance. We also integrate best practices to ensure seamless collaboration throughout the transformation journey, with a steadfast focus on communication, project management, and guiding clients toward long-term success.
+    </p>
+  
+    <div class="service-cards">
+      <div class="service-card" *ngFor="let section of sections">
+        <img [src]="section.icon" alt="{{ section.title }}" class="service-icon" />
+        <h3>{{ section.title }}</h3>
+        <p>{{ section.description }}</p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Team Section -->
+  <div class="team-section">
+    <h2>The Innovators Leading Your Technology Transformation</h2>
+    <p>
+      Our Business Process Transformation initiatives are spearheaded by a team of seasoned practice leads, each bringing a wealth of experience and specialized expertise in transforming legacy systems into modern, agile solutions. These industry veterans are adept at navigating the complexities of modernizing applications, ensuring that every project is aligned with both current technological trends and your unique business objectives. Their leadership is instrumental in driving innovation, efficiency, and growth for our clients' businesses.
+    </p>
+    <div class="team-members">
+      <div class="team-member" *ngFor="let member of teamMembers">
+        <img [src]="member.image" alt="{{ member.name }}" />
+        <h3>{{ member.name }}</h3>
+        <p>{{ member.designation }}</p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Case Studies Section -->
+  <section class="case-studies-section">
+    <h2>Real Clients. Real Success.</h2>
+    <p>
+      Explore our powerful collection of success stories. Each case study is a testament to our commitment to excellence, showcasing how we've collaboratively tackled challenges and turned them into opportunities. Experience first-hand the transformative impact our Business Process Transformation Services can bring to enterprises just like yours.
+    </p>
+  
+    <div class="case-studies-carousel">
+      <div class="case-study-card" *ngFor="let caseStudy of caseStudies; let i = index" [class.active]="i === activeIndex">
+        <div class="case-study-content">
+          <h3>{{ caseStudy.title }}</h3>
+          <p>{{ caseStudy.subtitle }}</p>
+          <div class="case-study-details">
+            <strong>Services:</strong>
+            <ul>
+              <li *ngFor="let service of caseStudy.services">{{ service }}</li>
+            </ul>
+            <strong>Technologies:</strong>
+            <ul>
+              <li *ngFor="let technology of caseStudy.technologies">{{ technology }}</li>
+            </ul>
+          </div>
+          <button>Read Full Case Study</button>
+        </div>
+        <img [src]="caseStudy.logo" alt="{{ caseStudy.clientName }}" class="client-logo" />
+      </div>
+    </div>
+  
+    <!-- Pagination Dots -->
+    <div class="pagination-dots">
+      <span *ngFor="let dot of caseStudies; let i = index" [class.active]="i === activeIndex" (click)="goToSlide(i)"></span>
+    </div>
+  </section>
+  
+  <!-- CTA Section -->
+  <div class="cta-banner">
+    <h2>Ready to Elevate Your Digital Infrastructure?</h2>
+    <p>
+      Take the leap with Improving. Let's collaborate and craft solutions tailored for your success. Contact us today and embark on your modernization journey.
+    </p>
+    <button>Contact Us</button>
+  </div>

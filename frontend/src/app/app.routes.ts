@@ -13,6 +13,13 @@ import { ModernCollaborationOverviewComponent } from './components/modern-collab
 import { ModernDataOverviewComponent } from './components/modern-data-overview/modern-data-overview.component';
 import { PlatformEngineeringOverviewComponent } from './components/platform-engineering-overview/platform-engineering-overview.component';
 import { ProductDeliveryOverviewComponent } from './components/product-delivery-overview/product-delivery-overview.component';
+import { PartnersOverviewComponent } from './components/partners-overview/partners-overview.component';
+import { AboutOverviewComponent } from './components/about-overview/about-overview.component';
+import { CaseStudiesOverviewComponent } from './components/case-studies-overview/case-studies-overview.component';
+import { ConsciousCapitalismOverviewComponent } from './components/conscious-capitalism-overview/conscious-capitalism-overview.component';
+import { HistoryOverviewComponent } from './components/history-overview/history-overview.component';
+import { LeadershipOverviewComponent } from './components/leadership-overview/leadership-overview.component';
+import { LocationsOverviewComponent } from './components/locations-overview/locations-overview.component';
 
 export const routes: Routes = [
 
@@ -55,5 +62,39 @@ export const routes: Routes = [
      { path: 'expertise/business-process-transformation-overview', component: BusinessProcessTransformationOverviewComponent },
      { path: 'expertise/modern-collaboration-overview', component: ModernCollaborationOverviewComponent },
      { path: 'expertise/product-delivery-overview', component: ProductDeliveryOverviewComponent },
+
+
+     {path: 'partners', component: PartnersOverviewComponent},
+
+     {
+      path: 'company',
+      children: [
+        {
+          path: 'about-overview',
+          component: AboutOverviewComponent
+        },
+        {
+          path: 'leadership-overview',
+          component: LeadershipOverviewComponent
+        },
+        {
+          path: 'conscious-capitalism-overview',
+          component: ConsciousCapitalismOverviewComponent
+        },
+        {
+          path: 'history-overview',
+          component: HistoryOverviewComponent
+        },
+        {
+          path: 'case-studies-overview',
+          component: CaseStudiesOverviewComponent
+        },
+        {
+          path: 'locations-overview',
+          component: LocationsOverviewComponent
+        }
+      ]
+    }
+  
    
   ];

@@ -40,8 +40,20 @@ export class HeaderComponent {
       ],
       showChildren: false // for mobile toggle
     },
-    { name: 'About', link: '/about' },
     { name: 'Partners', link: '/partners' },
+    {
+      name: 'Company',
+      children: [
+        { name: 'About Us', link: '/company/about-overview' },
+        { name: 'Leadership', link: '/company/leadership-overview' },
+        { name: 'Conscious Capitalism', link: '/company/conscious-capitalism-overview' },
+        { name: 'History', link: '/company/history-overview' },
+        { name: 'Case Studies', link: '/company/case-studies-overview' },
+        { name: 'Locations', link: '/company/locations-overview' },
+      ],
+      showChildren: false
+    },    
+    { name: 'Careers', link: '/careers'},
     { name: 'Contact', link: '/contact' }
   ];
 
@@ -58,7 +70,5 @@ export class HeaderComponent {
     this.isMenuOpen = false;
     document.body.style.overflow = 'auto';
   }
-
-  // New smooth scroll function
 
 }

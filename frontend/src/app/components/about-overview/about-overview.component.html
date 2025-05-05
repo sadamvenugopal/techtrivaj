@@ -1,0 +1,111 @@
+<!-- src/app/company/about-overview/about-overview.component.html -->
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="overlay"></div>
+      <div class="hero-text">
+        <h4>ABOUT US</h4>
+        <h1>What Makes Us Improving</h1>
+        <p>Our People Are Our Most Important Asset</p>
+      </div>
+      <div class="hero-image">
+        <img src="/about-hero.jpg" alt="About Us Banner" />
+      </div>
+    </section>
+  
+    <!-- Overview Section -->
+    <section class="overview-section">
+      <p>
+        Improving is a complete IT services company dedicated to positively changing the perception of the IT professional. We offer cutting-edge solutions through IT consulting, software development, and agile training to help our clients prosper and achieve their most challenging technology goals.
+      </p>
+    </section>
+  
+    <!-- Guiding Principles Section -->
+    <section class="guiding-principles-section">
+      <h2>Our Guiding Principles</h2>
+      <p>
+        Improving is dedicated to building and advancing a great work culture that exemplifies teamwork, excellence, and fun! We believe this inspires and motivates all of us while establishing life-long relationships. Improving is a long-time supporter of the Conscious Capitalism movement. We work to serve the interests of all our stakeholders, establishing trust along the way.
+      </p>
+      <p>
+        Providing an outstanding work culture is at the forefront of what we do. By producing an environment that generates joy, we believe that our people will be inspired and motivated while also establishing deep-rooted personal and professional relationships along the way. At Improving, our optimistic approach toward open communication, personal growth, and shared rewards has resulted in our sustainable success. At the heart of Improving is our set of core values.
+      </p>
+    </section>
+  
+    <!-- Core Values Section -->
+    <section class="core-values-section">
+      <h2>Our Core Values</h2>
+      <div class="value-card" *ngFor="let value of coreValues">
+        <img [src]="value.icon" alt="{{ value.title }}" />
+        <h3>{{ value.title }}</h3>
+        <p>{{ value.description }}</p>
+      </div>
+    </section>
+  
+    <!-- Team Section -->
+    <section class="team-section">
+      <h2>Our People</h2>
+      <p>
+        Our people are the lifeline of this company, so it is incredibly important to us that our work environment fosters trust. We want Improvers to have access to open communication, personal growth, and shared rewards. This has resulted in extensive, sustainable growth, which is why we feel like our success is a consequence of our involvement.
+      </p>
+      <p>
+        At Improving, we have two goals: Achieve great things and forge strong, lifelong connections. Who doesn’t want to work with real, true friends every day?
+      </p>
+      <button (click)="navigateToCompanySection('Join The Team')">Join The Team</button>
+    </section>
+  
+    <!-- Leadership Section -->
+    <section class="leadership-section">
+      <h2>Corporate Leadership</h2>
+      <div class="leader-grid">
+        <div *ngFor="let leader of leadership">
+          <img [src]="leader.photo" alt="{{ leader.name }}" />
+          <h3>{{ leader.name }}</h3>
+          <p>{{ leader.position }}</p>
+          <button (click)="navigateToLeader(leader.name)">Read Full Bio</button>
+        </div>
+      </div>
+    </section>
+  
+    <!-- Culture & Values Section -->
+    <section class="culture-values-section">
+      <h2>Our Culture & Values</h2>
+      <p>
+        Our Culture and Values are baked into everything we do at Improving. Since we know our employees spend so much time at work, we believe it is necessary to build a work culture that inspires and motivates us all.
+      </p>
+      <p>
+        Our Guiding Principles are excellence, involvement, and dedication, and it’s no secret that we persistently apply these principles to everything we do.
+      </p>
+      <button (click)="navigateToCulture()">Discover Our Culture</button>
+    </section>
+  
+    <!-- Awards & Recognitions Section -->
+    <section class="awards-section">
+      <h2>Awards & Recognitions</h2>
+      <p>
+        With a commitment to company culture, collaboration, and delivery excellence, we are proud and honored to be recognized with several national and local awards for over a decade. Here are just a few of the awards we have received.
+      </p>
+      <button (click)="navigateToAwards()">View All Awards</button>
+      <div class="award-logos">
+        <img *ngFor="let logo of awardLogos" [src]="logo.src" alt="{{ logo.alt }}" />
+      </div>
+    </section>
+  
+    <!-- Conscious Capitalism Section -->
+    <section class="conscious-capitalism-section">
+      <h2>Our Conscious Capitalism Philosophy</h2>
+      <p>
+        Improving is proud to be a Conscious Capitalism company that strives to elevate and broaden the traditional way businesses operate. The goal of Conscious Capitalism is to use businesses’ forces for good by focusing on both purpose and profitability.
+      </p>
+      <p>
+        As supporters of this movement, we aspire to be an organization that aims to exemplify the four pillars of conscious capitalism: Higher Purpose, Stakeholder Orientation, Conscious Leadership, and Conscious Culture.
+      </p>
+      <button (click)="navigateToConsciousCapitalism()">Learn More</button>
+    </section>
+  
+    <!-- Media Inquiries Section -->
+    <section class="media-inquiries-section">
+      <h2>Media Inquiries</h2>
+      <p>
+        For all media inquiries, please contact:
+      </p>
+      <a href="mailto:kristin.johnson@improving.com">Kristin Johnson, Vice President of Marketing</a>
+    </section>

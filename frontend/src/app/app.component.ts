@@ -14,7 +14,7 @@ import { FooterComponent } from './components/footer/footer.component';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'trivajtech';
+  title = 'BlueSkyCloud';
 
   constructor(private router: Router) {
     this.router.events

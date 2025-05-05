@@ -1,0 +1,45 @@
+<!-- src/app/company/leadership-overview/leadership-overview.component.html -->
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="overlay"></div>
+      <div class="hero-text">
+        <h4>OUR TEAM</h4>
+        <h1>Our Leadership Team</h1>
+      </div>
+      <div class="hero-image">
+        <img src="/leadership-hero.jpg" alt="Leadership Banner" />
+      </div>
+    </section>
+  
+    <!-- Introduction Section -->
+    <section class="introduction-section">
+      <h2>Meet Our Team</h2>
+      <p>
+        We are committed to creating a great place to work by cultivating an environment that fosters trust and transparency. Our leaders encourage and nurture these conditions, pursuing open communication, personal growth, and shared rewards within all our enterprises.
+      </p>
+    </section>
+  
+    <!-- Leadership Grid -->
+    <section class="leadership-grid">
+      <h2>Corporate Leadership</h2>
+      <div class="leader-cards">
+        <div *ngFor="let leader of leadership">
+          <div class="leader-card">
+            <img [src]="leader.photo" alt="{{ leader.name }}" />
+            <h3>{{ leader.name }}</h3>
+            <p>{{ leader.position }}</p>
+            <button (click)="navigateToLeader(leader.name)">Read Full Bio</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <!-- CTA Section -->
+    <section class="cta-banner">
+      <h2>Discover the Improving Culture</h2>
+      <p>
+        Learn what makes us tick as a company and why we love working together to change the perception of the IT profession.
+      </p>
+      <button (click)="navigateToCulture()">Learn More</button>
+    </section>

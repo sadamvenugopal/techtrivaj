@@ -1,0 +1,65 @@
+<!-- src/app/partners-overview/partners-overview.component.html -->
+
+    <!-- Header Section -->
+    <section class="hero-section">
+      <div class="hero-text">
+        <h4>OUR PARTNERS</h4>
+        <h1>{{ title }}</h1>
+      </div>
+      <div class="hero-image">
+        <img src="/partners-hero.jpg" alt="Partners Banner" />
+      </div>
+    </section>
+
+    <section class="overview-section">
+        <h2>OVERVIEW</h2>
+        <h3>Building Partnerships That Drive Success</h3>
+        <p>
+          To meet our customers’ evolving business and IT needs, we are invested in delivering specialized expertise through our trusted relationships with key partners. Unlock your organization’s full potential, overcome technological complexities, or launch a digital transformation with the help of our phenomenal consultants and partners.
+        </p>
+        <button (click)="navigateToPartner('Book a Free Consultation')">Book a Free Consultation →</button>
+      </section>
+    
+      <section class="global-partners-section">
+        <h2>GLOBAL PARTNERS</h2>
+        <h3>Driving Transformation with Global Industry Leaders</h3>
+        <p>
+          Our global partnerships with Microsoft, AWS, Google Cloud, and Scrum.org enable us to deliver cutting-edge solutions and unparalleled expertise, empowering businesses to achieve their most ambitious goals.
+        </p>
+        <div class="partner-grid">
+          <div *ngFor="let partner of globalPartners" class="partner-card">
+            <img [src]="partner.logo" [alt]="partner.title" class="partner-logo" />
+            <div class="partner-info">
+              <h4>{{ partner.title }}</h4>
+              <p>{{ partner.description }}</p>
+              <button (click)="navigateToPartner(partner.title)">Learn More</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="platform-partners-section">
+        <h2>PLATFORM PARTNERS</h2>
+        <h3>Innovating Through Advanced Platform Solutions</h3>
+        <p>
+          Collaborating with partners like Snowflake, Confluent, SAP, and Akka, we bring scalable, efficient, and transformative platform technologies to our clients, tailored to solve complex business challenges.
+        </p>
+        <div class="partner-grid">
+          <div *ngFor="let partner of platformPartners" class="partner-card">
+            <img [src]="partner.logo" [alt]="partner.title" class="partner-logo" />
+            <div class="partner-info">
+              <h4>{{ partner.title }}</h4>
+              <p>{{ partner.description }}</p>
+              <button (click)="navigateToPartner(partner.title)">Learn More</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+  
+    <!-- CTA Section -->
+    <div class="cta-banner">
+      <h2>Ready to Get Started?</h2>
+      <p>Contact us today and let’s build something great together.</p>
+      <button (click)="navigateToPartner('Contact Us')">Reach Out</button>
+    </div>

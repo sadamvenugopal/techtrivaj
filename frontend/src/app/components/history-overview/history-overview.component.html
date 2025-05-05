@@ -1,0 +1,43 @@
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="overlay"></div>
+      <div class="hero-text">
+        <h4>Timeline</h4>
+        <h1>Our History</h1>
+        <p>Explore Our Major Milestones</p>
+      </div>
+      <div class="hero-image">
+        <img src="/history-hero.jpg" alt="History Banner" />
+      </div>
+    </section>
+  
+    <!-- Timeline Section -->
+    <section class="timeline-section">
+      <div class="timeline">
+        <div *ngFor="let milestone of milestones">
+          <div class="year">{{ milestone.year }}</div>
+          <div class="event">
+            <h3>{{ milestone.event }}</h3>
+            <p>{{ milestone.description }}</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <!-- Latest News Articles Section -->
+    <section class="news-section">
+      <h2>Latest Newsroom Articles</h2>
+      <p>Our most recent acquisitions and major news announcements.</p>
+      <div class="news-grid">
+        <div *ngFor="let article of newsArticles">
+          <img [src]="article.image" alt="{{ article.title }}" />
+          <div class="news-content">
+            <span class="news-label">NEWSROOM</span>
+            <h3>{{ article.title }}</h3>
+            <p>{{ article.summary }}</p>
+            <button (click)="navigateToNews(article.slug)">Read News</button>
+          </div>
+        </div>
+      </div>
+    </section>

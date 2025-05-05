@@ -9,7 +9,7 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./about.component.css']
 })
 export class AboutComponent implements AfterViewInit {
-  title = 'About Improving';
+  title = 'About Us';
   description = 'We are dedicated to delivering exceptional services and building long-term relationships with our clients. Our team of experts is committed to excellence in every project we undertake.';
   features = [
     'Accounting Your All-Impact Celebration',

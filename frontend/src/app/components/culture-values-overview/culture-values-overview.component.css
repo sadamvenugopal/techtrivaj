@@ -1,0 +1,253 @@
+/* Hero Section */
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to right, #e6f0fa, #f7fafd);
+    padding: 60px 40px;
+    flex-wrap: wrap;
+  }
+  
+  .hero-text {
+    max-width: 500px;
+  }
+  
+  .hero-text h4 {
+    color: #999;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+  
+  .hero-text h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #1a1a1a;
+  }
+  
+  .hero-image img {
+    max-width: 400px;
+    border-radius: 12px;
+  }
+  
+  /* Introduction Section */
+  .introduction-section {
+    padding: 60px 40px;
+    text-align: center;
+  }
+  
+  .introduction-section p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  /* Core Values Section */
+  .core-values-section {
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  .core-values-section h2 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #1a1a1a;
+  }
+  
+  .values-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .value-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1 1 calc(33.333% - 20px);
+    min-width: 300px;
+  }
+  
+  .value-title {
+    font-size: 1.8rem;
+    color: #ffcc00; /* Example color for 'Excellence' */
+    margin-bottom: 10px;
+  }
+  
+  /* Awards Section */
+  .awards-section {
+    padding: 40px 0;
+    background-color: #f0f6ff;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  
+  .awards-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    padding: 60px 40px;
+
+  }
+  
+  .text-content {
+    text-align: left;
+  }
+  
+  .view-awards-btn {
+    background-color: #1a73e8;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .image-content img {
+    max-width: 100%;
+    border-radius: 12px;
+  }
+  
+  /* Inclusion and Diversity Section */
+  .inclusion-section {
+    padding: 60px 40px;
+    background-color: #e6f0fa;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  
+  .inclusion-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+  }
+  
+  .inclusion-btn {
+    background-color: #1a73e8;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  /* Testimonial Section */
+  .testimonial-section {
+    padding: 40px 0;
+    background-color: #f7fafd;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  
+  .testimonial-content {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+  }
+  .profile-image {
+    position: relative;
+  }
+  
+  .profile-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .profile-details {
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile-details h3 {
+    margin-bottom: 5px;
+  }
+  
+  .profile-details p {
+    margin-bottom: 10px;
+  }
+  
+  .read-full-btn {
+    background-color: #fff;
+    color: #1a73e8;
+    border: 1px solid #1a73e8;
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    cursor: pointer;
+  }
+  
+  .testimonial-quote {
+    text-align: center;
+    font-style: italic;
+    font-size: 1.2rem;
+  }
+  
+  /* CTA Section */
+  .cta-section {
+    padding: 60px 40px;
+    text-align: center;
+    background-color: #f0f6ff;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  
+  .become-improver-btn {
+    background-color: #1a73e8;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero-section {
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+      text-align: center;
+    }
+  
+    .hero-text h1 {
+      font-size: 2rem;
+    }
+  
+    .hero-image img {
+      max-width: 100%;
+      margin-top: 20px;
+    }
+  
+    .awards-content,
+    .inclusion-content {
+      grid-template-columns: 1fr;
+    }
+  
+    .testimonial-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .profile-image img {
+      width: 100%;
+      max-width: 300px;
+    }
+  }

@@ -1,0 +1,90 @@
+<!-- Hero Section -->
+<div class="hero-section">
+    <div class="hero-text">
+      <h4>OUR PEOPLE</h4>
+      <h1>Culture and Values</h1>
+    </div>
+    <div class="hero-image">
+      <img src="/assets/images/culture-banner.jpg" alt="Culture and Values Banner" />
+    </div>
+  </div>
+  
+  <!-- Introduction Section -->
+  <section class="introduction-section">
+    <p>
+      Improving recognizes that people devote a lot of time and energy to their careers. As a result, we believe it is crucial to embrace a gratifying and overwhelmingly positive culture!
+    </p>
+    <p>
+      Our enterprises are committed to providing a great place to work by valuing open communication, personal growth, and shared rewards. At the heart of Improving is our set of guiding principles, which are not only words on a page but what we strive to pursue every single day.
+    </p>
+  </section>
+  
+  <!-- Core Values Section -->
+  <section class="core-values-section">
+    <h2>{{ content.coreValuesSection.heading }}</h2>
+    <div class="values-container">
+      <!-- Value Card 1 -->
+      <div class="value-card" *ngFor="let value of content.coreValuesSection.values">
+        <div class="value-title">{{ value.title }}</div>
+        <p>{{ value.description }}</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Awards Section -->
+  <section class="awards-section">
+    <div class="awards-content">
+      <div class="text-content">
+        <h2>{{ content.awardsSection.heading }}</h2>
+        <p *ngFor="let paragraph of content.awardsSection.paragraphs">
+          {{ paragraph }}
+        </p>
+        <button class="view-awards-btn">{{ content.awardsSection.buttonLabel }}</button>
+      </div>
+      <div class="image-content">
+        <img [src]="content.awardsSection.imageUrl" [alt]="content.awardsSection.altText" />
+      </div>
+    </div>
+  </section>
+  
+  <!-- Inclusion and Diversity Section -->
+  <section class="inclusion-section">
+    <div class="inclusion-content">
+      <div class="image-content">
+        <img [src]="content.inclusionSection.imageUrl" [alt]="content.inclusionSection.altText" />
+      </div>
+      <div class="text-content">
+        <h2>{{ content.inclusionSection.heading }}</h2>
+        <p *ngFor="let paragraph of content.inclusionSection.paragraphs">
+          {{ paragraph }}
+        </p>
+        <button class="inclusion-btn">{{ content.inclusionSection.buttonLabel }}</button>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Testimonial Section -->
+  <section class="testimonial-section">
+    <div class="content-container">
+      <div class="testimonial-content">
+        <div class="profile-image">
+          <img [src]="content.testimonialSection.profile.imageUrl" [alt]="content.testimonialSection.profile.altText" />
+          <div class="profile-details">
+            <h3>{{ content.testimonialSection.profile.name }}</h3>
+            <p>{{ content.testimonialSection.profile.role }}</p>
+          </div>
+        </div>
+        <div class="testimonial-quote">
+          <p>
+            "{{ content.testimonialSection.quote }}"
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <h2>{{ content.ctaSection.heading }}</h2>
+    <button class="become-improver-btn">{{ content.ctaSection.buttonLabel }}</button>
+  </section>

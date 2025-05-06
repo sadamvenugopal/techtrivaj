@@ -5,6 +5,7 @@ import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-history-overview',
+  standalone: true,
   templateUrl: './history-overview.component.html',
   styleUrls: ['./history-overview.component.css'],
   imports: [CommonModule]

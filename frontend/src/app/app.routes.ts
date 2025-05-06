@@ -20,6 +20,10 @@ import { ConsciousCapitalismOverviewComponent } from './components/conscious-cap
 import { HistoryOverviewComponent } from './components/history-overview/history-overview.component';
 import { LeadershipOverviewComponent } from './components/leadership-overview/leadership-overview.component';
 import { LocationsOverviewComponent } from './components/locations-overview/locations-overview.component';
+import { CultureValuesOverviewComponent } from './components/culture-values-overview/culture-values-overview.component';
+import { EmployeeGrowthOverviewComponent } from './components/employee-growth-overview/employee-growth-overview.component';
+import { InclusionDiversityOverviewComponent } from './components/inclusion-diversity-overview/inclusion-diversity-overview.component';
+import { OpenPositionsOverviewComponent } from './components/open-positions-overview/open-positions-overview.component';
 
 export const routes: Routes = [
 
@@ -94,7 +98,30 @@ export const routes: Routes = [
           component: LocationsOverviewComponent
         }
       ]
+    },
+
+    {
+      path: 'careers',
+      children: [
+        {
+          path: 'open-positions-overview',
+          component: OpenPositionsOverviewComponent
+        },
+        {
+          path: 'culture-values-overview',
+          component: CultureValuesOverviewComponent
+        },
+        {
+          path: 'inclusion-diversity-overview',
+          component: InclusionDiversityOverviewComponent
+        },
+        {
+          path: 'employee-growth-overview',
+          component: EmployeeGrowthOverviewComponent
+        }
+      ]
     }
+  
   
    
   ];

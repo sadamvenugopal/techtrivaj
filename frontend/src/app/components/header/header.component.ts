@@ -48,12 +48,20 @@ export class HeaderComponent {
         { name: 'Leadership', link: '/company/leadership-overview' },
         { name: 'Conscious Capitalism', link: '/company/conscious-capitalism-overview' },
         { name: 'History', link: '/company/history-overview' },
-        { name: 'Case Studies', link: '/company/case-studies-overview' },
         { name: 'Locations', link: '/company/locations-overview' },
       ],
       showChildren: false
     },    
-    { name: 'Careers', link: '/careers'},
+    {
+      name: 'Careers',
+      children: [
+        { name: 'Open Positions', link: '/careers/open-positions-overview' },
+        { name: 'Culture & Values', link: '/careers/culture-values-overview' },
+        { name: 'Inclusion & Diversity', link: '/careers/inclusion-diversity-overview' },
+      ],
+      showChildren: false
+    },
+    
     { name: 'Contact', link: '/contact' }
   ];
 

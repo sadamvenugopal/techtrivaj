@@ -1,0 +1,96 @@
+<!-- Hero Section -->
+<div class="hero-section">
+    <div class="hero-text">
+      <h4>OUR PEOPLE</h4>
+      <h1>Inclusion and Diversity</h1>
+    </div>
+    <div class="hero-image">
+      <img src="/assets/images/inclusion-hero.jpg" alt="Inclusion and Diversity Banner" />
+    </div>
+  </div>
+  
+  <!-- Introduction Section -->
+  <section class="introduction-section">
+    <h2>{{ content.introductionSection.heading }}</h2>
+    <p *ngFor="let paragraph of content.introductionSection.paragraphs">
+      {{ paragraph }}
+    </p>
+  </section>
+  
+  <!-- Come As You Are Section -->
+  <section class="come-as-you-are-section">
+    <div class="content-container">
+      <div class="text-content">
+        <h2>{{ content.comeAsYouAreSection.heading }}</h2>
+        <p *ngFor="let paragraph of content.comeAsYouAreSection.paragraphs">
+          {{ paragraph }}
+        </p>
+      </div>
+      <div class="image-content">
+        <img [src]="content.comeAsYouAreSection.imageUrl" [alt]="content.comeAsYouAreSection.altText" />
+      </div>
+    </div>
+  </section>
+  
+  <!-- Our Commitment Section -->
+  <section class="commitment-section">
+    <div class="content-container">
+      <div class="image-content">
+        <img [src]="content.commitmentSection.imageUrl" [alt]="content.commitmentSection.altText" />
+      </div>
+      <div class="text-content">
+        <h2>{{ content.commitmentSection.heading }}</h2>
+        <p *ngFor="let paragraph of content.commitmentSection.paragraphs">
+          {{ paragraph }}
+        </p>
+        <button class="our-culture-btn">{{ content.commitmentSection.buttonLabel }}</button>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Testimonial Section -->
+  <section class="testimonial-section">
+    <div class="content-container">
+      <div class="testimonial-content">
+        <div class="profile-image">
+          <img [src]="content.testimonialSection.profile.imageUrl" [alt]="content.testimonialSection.profile.altText" />
+          <div class="profile-details">
+            <h3>{{ content.testimonialSection.profile.name }}</h3>
+            <p>{{ content.testimonialSection.profile.role }}</p>
+          </div>
+        </div>
+        <div class="testimonial-quote">
+          <p>
+            "{{ content.testimonialSection.quote }}"
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Blogs Section -->
+  <section class="blogs-section">
+    <h2>{{ content.blogsSection.heading }}</h2>
+    <p>
+      {{ content.blogsSection.description }}
+    </p>
+    <div class="blog-cards">
+      <!-- Blog Card 1 -->
+      <div class="blog-card" *ngFor="let blog of content.blogsSection.blogs">
+        <img [src]="blog.imageUrl" alt="{{ blog.title }}" />
+        <p class="category">{{ blog.category }}</p>
+        <h3>{{ blog.title }}</h3>
+        <p>{{ blog.excerpt }}</p>
+        <button>{{ blog.readButtonLabel }}</button>
+      </div>
+    </div>
+  </section>
+  
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <h2>{{ content.ctaSection.heading }}</h2>
+    <p>
+      {{ content.ctaSection.description }}
+    </p>
+    <button class="join-team-btn">{{ content.ctaSection.buttonLabel }}</button>
+  </section>

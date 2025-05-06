@@ -1,12 +1,9 @@
-/* src/app/company/history-overview/history-overview.component.css */
-
-  
-  /* Hero Section */
+   /* Hero Section */
   .hero-section {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: linear-gradient(to right, #007bff, #00c8ff);
+    background: linear-gradient(to right, #e6f0fa, #f7fafd);
     padding: 60px 40px;
     flex-wrap: wrap;
     position: relative;
@@ -18,7 +15,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    /* background-color: rgba(0, 0, 0, 0.5); */
   }
   
   .hero-section .hero-text {
@@ -36,12 +33,12 @@
   .hero-section .hero-text h1 {
     font-size: 3rem;
     font-weight: bold;
-    color: #ffffff;
+    color: #1a1a1a;
   }
   
   .hero-section .hero-text p {
     font-size: 1.5rem;
-    color: #ffffff;
+    color: #1a1a1a;
   }
   
   .hero-section .hero-image img {
@@ -63,7 +60,7 @@
   
   .year {
     font-size: 1.5rem;
-    color: #007bff;
+    color: #337ab7;
     font-weight: bold;
   }
   
@@ -73,7 +70,7 @@
   
   .event h3 {
     font-size: 1.5rem;
-    color: #007bff;
+    color: #337ab7;
     margin-bottom: 10px;
   }
   
@@ -91,7 +88,7 @@
   
   .news-section h2 {
     font-size: 2rem;
-    color: #007bff;
+    color: #337ab7;
     margin-bottom: 20px;
   }
   
@@ -126,13 +123,13 @@
   .news-label {
     font-size: 0.8rem;
     text-transform: uppercase;
-    color: #007bff;
+    color: #337ab7;
     margin-bottom: 10px;
   }
   
   .news-content h3 {
     font-size: 1.5rem;
-    color: #007bff;
+    color: #337ab7;
     margin-bottom: 10px;
   }
   
@@ -143,7 +140,7 @@
   }
   
   .news-content button {
-    background-color: #007bff;
+    background-color:#337ab7;
     color: white;
     border: none;
     padding: 12px 32px;

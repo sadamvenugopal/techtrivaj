@@ -11,32 +11,32 @@ export class ModernDataOverviewComponent implements OnInit, OnDestroy {
   sections = [
     {
       title: 'Data Warehousing',
-      description: 'Build robust data warehouses for centralized data storage and analysis.',
+      description: 'We build resilient, cloud-native data warehouses designed for modern analytics, machine learning, and real-time insights. Our architectures support structured and semi-structured data, ensuring agility, scalability, and seamless integration with BI and AI tools.',
       icon: '/data-warehousing.png'
     },
     {
       title: 'Advanced Analytics',
-      description: 'Leverage advanced analytics to gain valuable business insights.',
+      description: 'Get ahead of the competition with advanced analytics. We leverage Data Analytics Engineering to design tailored solutions that uncover key insights and accelerate business growth.',
       icon: '/advanced-analytics.png'
     },
     {
       title: 'Data Governance',
-      description: 'Establish comprehensive data governance policies and practices.',
+      description: 'Build a solid data governance framework that ensures trust, consistency, and compliance across your organization.Define clear policies and best practices to manage data securely, reduce risk, and support smarter decision-making.',
       icon: '/data-governance.png'
     },
     {
       title: 'Data Visualization',
-      description: 'Create intuitive data visualizations to communicate insights effectively.',
+      description: ' Empower your organization with data visualizations that simplify complex analytics and reveal actionable insights. Support every decision with clear, compelling visuals tailored for fast, informed action.',
       icon: '/data-visualization.png'
     },
     {
       title: 'Big Data Solutions',
-      description: 'Implement big data solutions for handling large volumes of data.',
+      description: '.Big data solutions help you manage and analyze large datasets with platforms like AWS and Google Cloud. Quickly uncover trends, optimize operations, and turn complex data into clear, actionable insights that drive growth and improve decision-making.',
       icon: '/big-data-solutions.png'
     },
     {
       title: 'Data Security',
-      description: 'Ensure data security and compliance with modern data practices.',
+      description: ' Protect your business with advanced data security solutions that meet industry standards and regulatory requirements. By implementing modern security practices, you can secure sensitive data, minimize risks, and ensure compliance in today’s fast-paced digital environment. Keep your business safe and compliant with robust, proactive measures.',
       icon: '/data-security.png'
     }
   ];

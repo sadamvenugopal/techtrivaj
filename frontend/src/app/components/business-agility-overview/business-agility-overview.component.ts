@@ -14,32 +14,32 @@ export class BusinessAgilityOverviewComponent implements OnInit, OnDestroy {
   sections = [
     {
       title: 'Process Optimization',
-      description: 'Streamline business processes for increased efficiency.',
+      description: 'Take your business to the next level by optimizing your core processes. Our solutions help you analyze, refine, and automate key workflows, improving efficiency, cutting costs, and enhancing overall performance.',
       icon: '/process-optimization.png'
     },
     {
       title: 'Digital Transformation',
-      description: 'Transform your business into a digital-first organization.',
+      description: 'Lead your industry with a seamless digital transformation. We help you upgrade legacy systems, boost operational efficiency, and develop a data-driven culture that accelerates growth, innovation, and competitive advantage.',
       icon: '/digital-transformation.png'
     },
     {
       title: 'Agile Methodologies',
-      description: 'Implement agile practices for faster and more flexible development cycles.',
+      description: 'Achieve quicker results and enhance team adaptability by implementing agile strategies. By embracing shorter development cycles and iterative feedback, your team can make improvements on the fly and meet changing demands head-on.',
       icon: '/agile-methodologies.png'
     },
     {
       title: 'Change Management',
-      description: 'Manage change effectively to ensure successful transformation.',
+      description: 'Smoothly transition through organizational shifts with a people-focused change strategy. Our approach helps build alignment, reduce resistance, and ensure long-term success during times of transformation.',
       icon: '/change-management.png'
     },
     {
       title: 'Automation',
-      description: 'Automate repetitive tasks to save time and resources.',
+      description: 'Transform how work gets done with intelligent automation that handles the routine so your team can focus on what matters most. Streamline operations, reduce human error, and increase productivity without adding headcount.',
       icon: '/automation.png'
     },
     {
       title: 'Innovation Leadership',
-      description: 'Lead innovation initiatives to stay ahead of the competition.',
+      description: 'Drive forward-thinking strategies that put your organization ahead of the curve. Our approach to innovation leadership empowers teams to explore new ideas, embrace change, and turn creativity into competitive advantage.',
       icon: '/innovation-leadership.png'
     }
   ];

@@ -12,32 +12,32 @@ export class ProductDeliveryOverviewComponent implements OnInit, OnDestroy {
   sections = [
     {
       title: 'Product Strategy',
-      description: 'Develop a clear product vision and roadmap.',
+      description: 'Create a future-ready product with a comprehensive strategy. From defining your vision to mapping the path forward, we ensure your product delivers sustained growth and meets evolving market demands.',
       icon: '/product-strategy.png'
     },
     {
       title: 'Agile Development',
-      description: 'Deliver products iteratively using agile methodologies.',
+      description: 'Innovate and iterate at speed. With agile development, we break projects into smaller, manageable cycles, delivering continuous value and adapting to changes quickly to meet evolving customer needs.',
       icon: '/agile-development.png'
     },
     {
       title: 'Continuous Integration/Deployment',
-      description: 'Implement CI/CD pipelines for automated builds and deployments.',
+      description: 'Ensure smooth, consistent releases with CI/CD automation. We help integrate and deploy code faster, improve software quality, and reduce the risks associated with manual deployments, enabling your teams to deliver efficiently.',
       icon: '/ci-cd.png'
     },
     {
       title: 'Quality Assurance',
-      description: 'Ensure product quality through rigorous testing and validation.',
+      description: 'Achieve excellence with our robust quality assurance approach. We apply detailed testing protocols to validate functionality, performance, and security, ensuring your product delivers on every promise, every time.',
       icon: '/quality-assurance.png'
     },
     {
       title: 'DevOps Practices',
-      description: 'Integrate DevOps to streamline development and operations.',
+      description: 'Harness the power of DevOps to streamline your operations. We merge development and IT operations into a unified, automated workflow that accelerates delivery, increases system reliability, and provides real-time visibility across the development lifecycle.',
       icon: '/devops-practices.png'
     },
     {
       title: 'Product Maintenance',
-      description: 'Provide ongoing support and updates for deployed products.',
+      description: 'Ensure the long-term success of your product with continuous maintenance. Our team provides proactive updates, security patches, and system improvements to maximize performance and maintain customer satisfaction.',
       icon: '/product-maintenance.png'
     }
   ];

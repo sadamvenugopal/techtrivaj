@@ -11,32 +11,33 @@ export class PlatformEngineeringOverviewComponent implements OnInit, OnDestroy {
   sections = [
     {
       title: 'Infrastructure Assessment',
-      description: 'Comprehensive evaluation of existing infrastructure to identify areas for improvement.',
+      description:
+       'We conduct a thorough evaluation of your current infrastructure to identify performance bottlenecks, outdated components, and scalability challenges. Our goal is to provide a clear roadmap for modernization—maximizing efficiency, reducing costs, and preparing your tech stack for what’s next.',
       icon: '/infrastructure-assessment.png'
     },
     {
       title: 'Cloud Migration',
-      description: 'Seamless migration of applications and data to cloud environments for enhanced scalability and cost-efficiency.',
+      description: 'Our cloud migration services are built around your business goals. We provide a structured, low-risk migration path that ensures continuity, compliance, and improved ROI. Whether you’re consolidating legacy systems or modernizing at scale, we align your cloud strategy with long-term success.',
       icon: '/cloud-migration.png'
     },
     {
       title: 'Microservices Architecture',
-      description: 'Transition from monolithic architectures to microservices for improved scalability and flexibility.',
+      description: 'Move from monolithic to microservices with a seamless transformation that improves system agility and streamlines development. Our approach breaks your application into scalable, independent services that deliver faster deployments, better resource management, and reduced time-to-market—all while enhancing overall system reliability.',
       icon: '/microservices-architecture.png'
     },
     {
       title: 'DevOps Integration',
-      description: 'Integrate DevOps practices to streamline development and operations, enhancing collaboration and accelerating time-to-market.',
+      description: 'Speed up your release cycles and improve your product’s performance by integrating DevOps practices into your workflow. We help you streamline operations, automate repetitive tasks, and boost collaboration across teams, enabling faster, more efficient development, and quicker time-to-market.',
       icon: '/devops-integration.png'
     },
     {
       title: 'Distributed Systems',
-      description: 'Optimize application responsiveness by distributing systems closer to users for enhanced availability and performance.',
+      description: 'Keep your apps fast and available—no matter where your users are. We build distributed systems that reduce latency, improve uptime, and scale with your growth, so your customers always get a smooth experience.',
       icon: '/distributed-systems.png'
     },
     {
       title: 'API Development',
-      description: 'Design, build, and deploy APIs for seamless integration, data exchange, and functionality expansion.',
+      description: 'APIs are the backbone of modern digital ecosystems. We specialize in building secure, scalable APIs that empower seamless communication between systems, apps, and services. Whether you’re connecting internal tools, integrating with third-party platforms, or creating public-facing APIs for partners, we ensure smooth interoperability, consistent performance, and easy-to-follow documentation that developers love.',
       icon: '/api-development.png'
     },
     {

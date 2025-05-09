@@ -12,32 +12,32 @@ export class BusinessProcessTransformationOverviewComponent implements OnInit, O
   sections = [
     {
       title: 'Process Optimization',
-      description: 'Streamline business processes for increased efficiency.',
+      description: ' Transform how work flows through your business. By identifying bottlenecks and automating routine steps, we help you streamline operations and drive consistent, scalable results.',
       icon: '/process-optimization.png'
     },
     {
       title: 'Digital Workflow Automation',
-      description: 'Automate workflows to reduce manual effort and errors.',
+      description: ' Modernize the way your business runs by replacing clunky, manual tasks with smooth, automated workflows. Save time, reduce costs, and get work moving faster—without the headaches.',
       icon: '/digital-workflow-automation.png'
     },
     {
       title: 'Change Management',
-      description: 'Manage change effectively to ensure successful transformation.',
+      description: ' Transformation is only as strong as your change strategy. We help you manage transitions in a way that minimizes disruption and maximizes momentum.',
       icon: '/change-management.png'
     },
     {
       title: 'Operational Excellence',
-      description: 'Achieve operational excellence through continuous improvement.',
+      description: 'Drive peak performance by embedding a culture of continuous improvement across every function. Our approach sharpens processes, uplifts quality, and maximizes value—ensuring your operations run at their very best.',
       icon: '/operational-excellence.png'
     },
     {
       title: 'Lean Six Sigma',
-      description: 'Implement Lean Six Sigma methodologies for process improvement.',
+      description: 'Optimize operational workflows by merging Lean efficiency with Six Sigma precision. We help organizations cut through inefficiencies, enhance output, and build systems that deliver repeatable excellence.',
       icon: '/lean-six-sigma.png'
     },
     {
       title: 'Agile Transformation',
-      description: 'Transition to agile practices for faster and more flexible development cycles.',
+      description: ' Enable strategic responsiveness at scale. Our agile transformation services embed adaptive frameworks that enhance productivity, reduce delivery risk, and improve time-to-value across complex environments.',
       icon: '/agile-transformation.png'
     }
   ];

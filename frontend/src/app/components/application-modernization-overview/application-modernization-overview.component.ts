@@ -12,42 +12,42 @@ export class ApplicationModernizationOverviewComponent {
   sections = [
     {
       title: 'Legacy System Modernization',
-      description: 'Transform and update your outdated systems to more current, efficient, and scalable technologies while ensuring data integrity and minimal disruption.',
+      description: ' Modernize your outdated systems with innovative technologies that boost efficiency and scalability. Keep data secure and ensure a seamless upgrade with minimal operational disruption.',
       icon: '/legacy-system-modernization.png'
     },
     {
       title: 'Cloud Native Development',
-      description: 'Transition to a dynamic, efficient, and cost-effective cloud environment with our cloud-native development services. Harness the power of the cloud by tailoring solutions to its unique capabilities.',
+      description: 'Move to a smarter, more agile cloud environment with cloud-native development. Tailor your applications to take full advantage of cloud scalability, flexibility, and cost-efficiency, driving innovation and long-term success.',
       icon: '/cloud-native-development.png'
     },
     {
       title: 'Microservices Architecture',
-      description: 'Transition from a monolithic to a microservices architecture to enhance application scalability, flexibility, and speed of deployments.',
+      description: 'Move from monolithic to microservices architecture to boost scalability and streamline application management. Enable faster deployment cycles and greater flexibility, improving your ability to innovate and respond to market needs.',
       icon: '/microservices-architecture.png'
     },
     {
       title: 'DevOps Integration',
-      description: 'Integrate DevOps practices to streamline development and operations, enhancing collaboration, and accelerating time-to-market.',
+      description: 'Integrate DevOps to unify development and operations, enabling faster releases, better collaboration, and greater agility. By automating workflows and fostering a culture of continuous improvement, DevOps accelerates time-to-market and drives operational efficiency.',
       icon: '/devops-integration.png'
     },
     {
       title: 'Distributed Systems',
-      description: 'Elevate your application’s responsiveness by optimizing proximity to your users. With our distributed systems solutions, ensure enhanced availability and performance while meeting the demands of today’s digital-first world.',
+      description: 'Empower your applications to perform at scale with distributed systems built for high availability and low latency. By bringing compute and data closer to users, you ensure seamless experiences, even under heavy load or across global regions.',
       icon: '/distributed-systems.png'
     },
     {
       title: 'API Development',
-      description: 'Design, build, and deploy APIs that facilitate seamless integration, data exchange, and functionality expansion across various applications and systems.',
+      description: 'Develop secure, efficient APIs that connect your services, enable automation, and scale with your business. Our API-first approach ensures reliable communication between systems, creating a strong foundation for modern software ecosystems.',
       icon: '/api-development.png'
     },
     {
       title: 'Modern Application Security',
-      description: 'Strengthen your application’s security with modern approaches that ensure robust protection against evolving digital threats.',
+      description: ' From design to deployment, our security-first approach protects your applications against breaches, exploits, and compliance risks. Stay agile without sacrificing safety—modern security, built for modern software.',
       icon: '/modern-application-security.png'
     },
     {
       title: 'Training & Education',
-      description: 'Equip your team with cutting-edge skills in Software Delivery, Architecture, Design, and specific technologies. Our expert training services are geared to foster growth, innovation, and mastery in today’s dynamic tech landscape.',
+      description: 'Invest in your people with tailored training programs that sharpen skills in software design, architecture, and modern development tools. Our goal: to help your team innovate with confidence and stay future-ready',
       icon: '/training-education.png'
     }
   ];

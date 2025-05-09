@@ -13,32 +13,32 @@ export class ModernCollaborationOverviewComponent implements OnInit, OnDestroy {
   sections = [
     {
       title: 'Team Collaboration Tools',
-      description: 'Enhance teamwork with modern collaboration tools.',
+      description: 'Simplify teamwork with modern collaboration platforms that bring conversations, files, and workflows into one space. Designed for speed and clarity, these tools help your team focus on execution, not coordination.',
       icon: '/team-collaboration-tools.png'
     },
     {
       title: 'Integrated Communication Platforms',
-      description: 'Integrate communication platforms for seamless interaction.',
+      description: 'Centralize communication with platforms designed to unify your tools, people, and processes. By integrating voice, video, chat, and task management, your teams can collaborate without missing a beat.',
       icon: '/integrated-communication-platforms.png'
     },
     {
       title: 'Remote Work Solutions',
-      description: 'Enable remote work with robust collaboration solutions.',
+      description: 'Support your distributed teams with remote work solutions designed for speed, security, and collaboration. Equip your workforce with the tools they need to stay aligned, efficient, and engaged from any location.',
       icon: '/remote-work-solutions.png'
     },
     {
       title: 'Knowledge Management Systems',
-      description: 'Implement knowledge management systems for better information sharing.',
+      description: 'Break down silos and improve decision-making with scalable knowledge management solutions. Make institutional knowledge accessible across departments so your team can learn, adapt, and innovate faster.',
       icon: '/knowledge-management-systems.png'
     },
     {
       title: 'Virtual Meetings',
-      description: 'Facilitate virtual meetings and conferences efficiently.',
+      description: 'Elevate your remote collaboration with virtual meeting tools that are easy to use, secure, and built for business. Host meetings, share content, and engage participants from anywhere—all in one seamless experience.',
       icon: '/virtual-meetings.png'
     },
     {
       title: 'Document Collaboration',
-      description: 'Enable real-time document collaboration for teams.',
+      description: ' Simplify teamwork with cloud-based document collaboration that enables instant updates, sharing, and version control. Work together in real time, ensuring that your projects stay on track and deadlines are met.',
       icon: '/document-collaboration.png'
     }
   ];
